@@ -7,7 +7,7 @@ import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Services from "./pages/Services/services";
 import Contact from "./pages/Contact/contact";
-import Blog from "./pages/blog/blog";
+import Blog from "./pages/Blog/blog"
 import Gallery from "./pages/gallery/gallery";
 import Footer from "./Components/Footer/footer";
 import ScrollToTop from "./pages/scroll/scroll";
