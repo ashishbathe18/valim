@@ -1,0 +1,211 @@
+/* ---------- GLOBAL ---------- */
+.contact-page {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fc;
+  color: #333;
+  overflow-x: hidden; /* ✅ MOBILE SHAKE FIX */
+}
+
+/* ---------- LOADING ---------- */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+}
+
+/* ---------- HERO ---------- */
+.contact-hero {
+  height: 60vh;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 16px;
+}
+
+.hero-overlay h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* ---------- CONTENT ---------- */
+.contact-wrapper {
+  padding: 60px 16px;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ---------- INFO ---------- */
+.contact-info h3 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #2f9681;
+  font-weight: 700;
+}
+
+.contact-info p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ---------- FORM ---------- */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2f9681;
+}
+
+.contact-form button {
+  padding: 14px;
+  background: linear-gradient(135deg, #4CAF50, #1B5E20);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ---------- MAP ---------- */
+.map-section {
+  padding: 60px 16px;
+  background: #fff;
+}
+
+.map-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.map-address {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 360px;
+  border: none;
+  border-radius: 16px;
+}
+
+/* =================================================
+   📱 TABLET
+================================================= */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 34px;
+  }
+
+  .contact-info p {
+    font-size: 18px;
+  }
+}
+
+/* =================================================
+   📱 MOBILE – PERFECT FIX
+================================================= */
+@media (max-width: 576px) {
+
+  .contact-hero {
+    height: 32vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 26px;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+  }
+
+  .contact-wrapper {
+    padding: 40px 12px;
+  }
+
+  .contact-container {
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .contact-info h3 {
+    font-size: 22px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+  }
+
+  .map-title {
+    font-size: 24px;
+  }
+
+  .map-embed iframe {
+    height: 260px;
+  }
+}

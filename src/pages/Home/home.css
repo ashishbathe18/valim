@@ -1,0 +1,500 @@
+/* ================= GLOBAL ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero-section{
+position:relative;
+width:100%;
+height:60vh;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-section::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.55);
+z-index:1;
+}
+
+.hero-image{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+opacity:0;
+transform:scale(1.08);
+transition:opacity 1.2s ease, transform 6s ease;
+}
+
+.hero-image.active{
+opacity:1;
+transform:scale(1);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+color:#fff;
+max-width:800px;
+padding:0 20px;
+}
+
+.hero-content h6{
+letter-spacing:2px;
+color:#ffc107;
+margin-bottom:6px;
+}
+
+.hero-content h1{
+font-size:42px;
+font-weight:800;
+margin-bottom:12px;
+}
+
+.hero-content p{
+font-size:16px;
+line-height:1.7;
+}
+
+/* ================= BUTTON ================= */
+
+.home-btn{
+margin-top:22px;
+padding:14px 36px;
+background:linear-gradient(135deg,#ffc107,#ff9800);
+border:none;
+border-radius:30px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+animation:pulse 2.5s infinite;
+}
+
+.home-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+@keyframes pulse{
+
+0%{box-shadow:0 0 0 0 rgba(255,193,7,0.6)}
+
+70%{box-shadow:0 0 0 12px rgba(255,193,7,0)}
+
+100%{box-shadow:0 0 0 0 rgba(255,193,7,0)}
+
+}
+
+/* ================= ABOUT ================= */
+
+.about-home{
+padding:40px 20px;
+background:#fff;
+text-align:center;
+}
+
+.about-home h2{
+font-size:34px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.about-home p{
+max-width:850px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#555;
+}
+
+/* ================= FEATURES ================= */
+
+.feature-section{
+background:#f2f2f2;
+padding:50px 20px;
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+text-align:center;
+}
+
+.feature-box{
+width:280px;
+}
+
+.feature-img{
+width:70px;
+height:70px;
+object-fit:contain;
+margin-bottom:15px;
+}
+
+.feature-box p{
+font-size:18px;
+font-weight:500;
+color:#222;
+}
+
+/* ================= EXPORT SECTION ================= */
+
+.export-section{
+padding:80px 6%;
+background:#f9f9f9;
+}
+
+.export-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.export-image-wrapper{
+position:relative;
+flex:1;
+min-width:300px;
+}
+
+.export-image{
+width:100%;
+border-radius:18px;
+}
+
+.export-overlay-text{
+position:absolute;
+top:40%;
+left:10%;
+color:#fff;
+}
+
+.export-overlay-text h1{
+font-size:38px;
+font-weight:600;
+}
+
+.export-badge-box{
+position:absolute;
+bottom:30px;
+right:-20px;
+background:#d4a437;
+padding:20px;
+border-radius:18px;
+color:#fff;
+width:200px;
+text-align:center;
+}
+
+.export-content{
+flex:1;
+min-width:300px;
+}
+
+.export-content h2{
+font-size:42px;
+font-weight:800;
+margin-bottom:20px;
+color:#1b3b2f;
+}
+
+.export-description{
+color:#555;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.export-btn{
+background:#d4a437;
+border:none;
+padding:14px 32px;
+border-radius:30px;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.export-btn:hover{
+background:#b98c2d;
+transform:translateY(-2px);
+}
+
+/* ================= PORTFOLIO ================= */
+
+.portfolio-section{
+padding:80px 6%;
+background:#f4f6f3;
+}
+
+.portfolio-header{
+text-align:center;
+margin-bottom:60px;
+}
+
+.portfolio-header h2{
+font-size:36px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.portfolio-sub{
+color:#555;
+font-size:17px;
+}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.portfolio-card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+transition:.3s;
+}
+
+.portfolio-card:hover{
+transform:translateY(-6px);
+}
+
+.portfolio-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.portfolio-content{
+padding:20px;
+}
+
+.portfolio-btn{
+background:#1b5e20;
+color:#fff;
+border:none;
+padding:10px 24px;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+}
+
+.portfolio-btn:hover{
+background:#145a32;
+}
+
+/* ================= PROMO ================= */
+
+.promo-section{
+padding:80px 6%;
+background:#f4f4f4;
+}
+
+.promo-container{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.promo-card{
+flex:1;
+min-width:300px;
+height:420px;
+background-size:cover;
+background-position:center;
+border-radius:20px;
+display:flex;
+align-items:center;
+padding:40px;
+position:relative;
+color:#fff;
+}
+
+.promo-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
+}
+
+.promo-content{
+position:relative;
+z-index:2;
+}
+
+.promo-content h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.promo-btn{
+padding:12px 30px;
+border:2px solid #fff;
+background:transparent;
+color:#fff;
+cursor:pointer;
+border-radius:8px;
+}
+
+/* ================= RECIPES ================= */
+
+.recipes-section{
+padding:80px 5%;
+background:#f3f3f3;
+}
+
+.recipes-wrapper{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.recipes-content{
+text-align:center;
+max-width:520px;
+}
+
+.recipes-content h2{
+font-size:42px;
+font-weight:800;
+margin-bottom:20px;
+background:linear-gradient(45deg,#1b5e20,#43a047);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.recipes-content p{
+font-size:17px;
+color:#555;
+margin-bottom:35px;
+line-height:1.8;
+}
+
+.recipes-btn{
+padding:14px 35px;
+background:linear-gradient(135deg,#1b5e20,#43a047);
+color:#fff;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+}
+
+/* CAROUSEL */
+
+.recipes-carousel{
+width:250px;
+overflow:hidden;
+}
+
+.carousel-track{
+display:flex;
+flex-direction:column;
+gap:20px;
+animation:scrollUp 15s linear infinite;
+}
+
+.carousel-track.reverse{
+animation:scrollDown 15s linear infinite;
+}
+
+.carousel-track img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:50%;
+}
+
+@keyframes scrollUp{
+0%{transform:translateY(0)}
+100%{transform:translateY(-50%)}
+}
+
+@keyframes scrollDown{
+0%{transform:translateY(-50%)}
+100%{transform:translateY(0)}
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.export-container,
+.recipes-wrapper{
+flex-direction:column;
+text-align:center;
+}
+
+.export-content h2{
+font-size:32px;
+}
+
+.recipes-content h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-section{
+height:55vh;
+}
+
+.hero-content h1{
+font-size:28px;
+}
+
+.feature-section{
+flex-direction:column;
+}
+
+.portfolio-header h2{
+font-size:28px;
+}
+
+.promo-container{
+flex-direction:column;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-content h1{
+font-size:24px;
+}
+
+.home-btn{
+padding:10px 24px;
+font-size:13px;
+}
+
+.export-content h2{
+font-size:24px;
+}
+
+.recipes-content h2{
+font-size:24px;
+}
+
+}

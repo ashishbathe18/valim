@@ -1,0 +1,199 @@
+/* ---------- FOOTER GLOBAL ---------- */
+.custom-footer {
+  background: linear-gradient(135deg, #1B5E20, #4CAF50);
+  color: #eef0ef;
+  padding: 30px 20px 15px;   /* 🔥 reduced */
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ---------- FOOTER COLUMN ---------- */
+.footer-col {
+  margin-bottom: 20px;   /* 🔥 reduced from 35px */
+}
+
+/* ---------- FOOTER TITLE ---------- */
+.footer-title {
+  color: #ffffff;
+  margin-bottom: 12px;   /* 🔥 reduced */
+  font-size: 22px;       /* 🔥 smaller */
+  font-weight: 700;
+}
+
+/* ---------- QUICK LINKS ---------- */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;   /* 🔥 reduced */
+}
+
+.footer-links li a {
+  display: inline-block;
+  font-size: 15px;       /* 🔥 reduced */
+  font-weight: 500;
+  color: #f3f2ef;
+  margin-left: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ff6ec7;
+  transform: translateX(4px);
+}
+
+/* ---------- NEWS ---------- */
+.news-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;   /* 🔥 reduced */
+}
+
+.news-item img {
+  width: 50px;           /* 🔥 smaller */
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.news-item p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #eee;
+  margin: 0;
+}
+
+.news-item small {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* ---------- NEWSLETTER ---------- */
+.newsletter {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 8px 10px;   /* 🔥 reduced */
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter button {
+  background: #ff6ec7;
+  border: none;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---------- INSTAGRAM ---------- */
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;    /* 🔥 reduced */
+}
+
+.insta-grid img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* ---------- FOOTER BOTTOM ---------- */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 25px;     /* 🔥 reduced */
+  padding-top: 10px;    /* 🔥 reduced */
+  font-size: 13px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* ---------- TABLET ---------- */
+@media (max-width: 991px) {
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 576px) {
+
+  .custom-footer {
+    text-align: center;
+    padding: 35px 15px 15px;  /* 🔥 compact */
+  }
+
+  .footer-links li a {
+    font-size: 16px;
+  }
+
+  .footer-links li a:hover {
+    transform: none;
+  }
+
+  .news-item {
+    justify-content: center;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .newsletter button {
+    padding: 10px;
+  }
+
+  .insta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ---------- FOLLOW US ---------- */
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.social-icons a {
+  width: 102px;
+  height: 32px;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-left: 28px;
+}
+
+.social-icons a:hover {
+  background: #ff6ec7;
+  transform: translateY(-5px);
+}
+
+
+
