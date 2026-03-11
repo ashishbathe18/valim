@@ -8,9 +8,9 @@ import About from "./pages/About/about";
 import Services from "./pages/Services/services";
 import Contact from "./pages/Contact/contact";
 import Blog from "./pages/Blog/blog"
-import Gallery from "./pages/gallery/gallery";
+import Gallery from "./pages/Gallery/gallery";
 import Footer from "./Components/Footer/footer";
-import ScrollToTop from "./pages/scroll/scroll";
+import ScrollToTop from "./pages/scroll/Scroll";
 import Products from "./pages/Products/Products";
 
 const App = () => {
