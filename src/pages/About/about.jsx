@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 
-import "./About.css";
+import "./about.css";
 
 // Image imports
 import bac from "../../assets/About/bac.png";
