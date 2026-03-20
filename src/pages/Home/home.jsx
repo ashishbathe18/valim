@@ -100,17 +100,17 @@ function Home() {
 
       {/* ===== FEATURE SECTION ===== */}
       <section className="feature-section">
-        <div className="feature-box"style={{marginLeft:"35px"}}>
+        <div className="feature-box">
           <img src={bowel} alt="Plant Based" className="feature-img" />
           <p>Largest range of plant-based ingredients for foodservice.</p>
         </div>
 
-        <div className="feature-box"style={{marginLeft:"35px"}}>
+        <div className="feature-box">
           <img src={lunch} alt="Trusted Chefs" className="feature-img" />
           <p>Trusted by thousands of chefs and caterers.</p>
         </div>
 
-        <div className="feature-box"style={{marginLeft:"35px"}}>
+        <div className="feature-box">
           <img src={tatali} alt="Secure Payment" className="feature-img" />
           <p>Checkout instantly by card or apply for a credit account.</p>
         </div>
