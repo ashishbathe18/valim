@@ -8,6 +8,7 @@ import bac from "../../assets/About/bac.png";
 import m1 from "../../assets/About/man1.png";
 import gst from "../../assets/About/gst.png";
 import frc from "../../assets/About/frc.png";
+import Certificates from "../certificate/certificate";
 
 function About() {
   useEffect(() => {
@@ -127,47 +128,7 @@ Every product is carefully sourced, processed, and packaged to meet global quali
 {/* -----------------------------------------prathmesh deasie------------------------------------------- */}
      {/* ================= CERTIFICATIONS SECTION ================= */}
 
-<section className="cert-section">
-  <div className="cert-container">
-    
-    <div className="cert-header">
-      <h2>Our Certifications</h2>
-      <p>
-        We are a legally registered export company committed to quality,
-        transparency, and global compliance.
-      </p>
-    </div>
-
-    <div className="cert-grid">
-
-      {/* GST Certificate */}
-      <div className="cert-card">
-        <img src={gst} alt="GST Certificate" />
-        <div className="cert-content">
-          <h3>GST Registration Certificate</h3>
-          <p>
-            Official Goods & Services Tax registration confirming
-            our business compliance in India.
-          </p>
-        </div>
-      </div>
-
-      {/* IEC Certificate */}
-      <div className="cert-card">
-        <img src={frc} alt="IEC Certificate" />
-        <div className="cert-content">
-          <h3>Import Export Code (IEC)</h3>
-          <p>
-            Government-issued Import Export Code authorizing us
-            to conduct international trade operations.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
+<Certificates/>
 
       {/* VISION / MISSION / QUALITY */}
       <section className="about-pillars">

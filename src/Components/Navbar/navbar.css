@@ -8,7 +8,7 @@
 
 /* NAVBAR */
 .navbar {
-  height: 70px;
+  height: 85px;
   background: linear-gradient(135deg, var(--primary-green), var(--light-green));
   display: flex;
   justify-content: space-between;
@@ -22,8 +22,8 @@
     border:2px solid silver;
 
 box-shadow:
-0 0 5px silver,
-0 0 10px silver,
+0 0 5px #ffffff,
+0 0 10px #ffffff,
 0 0 15px #ffffff;
 }
 
@@ -31,14 +31,22 @@ box-shadow:
 .logo {
   display: flex;
   align-items: center;
+  border-radius: 50%;
   gap: 10px;
 }
 
 .logo img {
-  height: 65px;
-  width: 80px;
+  width: 70px;        /* height equal ठेव */
+  height: 70px;
+  border-radius: 50%; /* 🔥 circle */
+  object-fit: cover;  /* image stretch होणार नाही */
+  border: 2px solid white; /* optional */
+   margin-left: 120px;
+  position: relative;
+  bottom: 12px;
   margin-left: 120px;
   margin-bottom: 19px;
+  margin-top:12px;
 }
 
 .logo span {
@@ -50,15 +58,14 @@ box-shadow:
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 35px;
+  gap: 65px;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-links li {
   position: relative;
-  margin-left: 19px;
-  margin-bottom: 19px;
-   margin-top: 1px;
+  bottom: 20px;
 }
 
 .nav-links li a {
@@ -84,6 +91,8 @@ box-shadow:
   font-weight: 700;
   transition: 0.3s;
   border:2px solid silver;
+  position: relative;
+  bottom: 12px;
 
 }
 
@@ -177,7 +186,7 @@ box-shadow:
 /* CLOSE BUTTON */
 .close-btn {
   position: absolute;
-  top: 20px;
+ bottom:20px ;
   right: 20px;
   font-size: 30px;
   cursor: pointer;
@@ -208,6 +217,8 @@ box-shadow:
 
   .hamburger {
     display: block;
+   margin-right: 20px;
+   margin-bottom: 23px;
   }
 
 }
@@ -224,7 +235,11 @@ box-shadow:
   }
 
   .logo img {
-    height: 38px;
+    height: 60px;
+    position: relative;
+    right: 100px;
+ 
+
   }
 
 }

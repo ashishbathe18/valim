@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import logo3 from "../../assets/navbar/logo3.png";
+import logo4 from "../../assets/navbar/logo4.png";
 const Navbar = () => {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -15,9 +15,9 @@ const Navbar = () => {
     <>
       <nav className="navbar">
 
-        <div className="logo">
+        <div className="logo ">
           
-          <img src={logo3} alt="" />
+          <img src={logo4} alt=""  />
          
         </div>
 
@@ -28,14 +28,14 @@ const Navbar = () => {
           <li><Link to="/about">About</Link></li>
 
           {/* PRODUCTS DROPDOWN */}
-          <li className="dropdown">
+          <li className="dropdown ">
 
             <div className="dropdown-title" onClick={toggleProducts}>
               Products ▾
             </div>
 
             {productOpen && (
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu"style={{marginTop:"20px"}}>
 
                 <li>
                   <Link to="/products/vegetables" onClick={()=>setProductOpen(false)}>
@@ -86,7 +86,7 @@ const Navbar = () => {
       {/* MOBILE SIDEBAR */}
       <div className={`sidebar ${sidebarOpen ? "active" : ""}`}>
 
-        <div className="close-btn" onClick={() => setSidebarOpen(false)}>×</div>
+        <div className="close-btn "style={{color:"white"}} onClick={() => setSidebarOpen(false)}>×</div>
 
         <Link to="/" onClick={() => setSidebarOpen(false)}>Home</Link>
 

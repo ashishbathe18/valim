@@ -100,17 +100,17 @@ function Home() {
 
       {/* ===== FEATURE SECTION ===== */}
       <section className="feature-section">
-        <div className="feature-box">
+        <div className="feature-box"style={{marginLeft:"45px"}}>
           <img src={bowel} alt="Plant Based" className="feature-img" />
           <p>Largest range of plant-based ingredients for foodservice.</p>
         </div>
 
-        <div className="feature-box">
+        <div className="feature-box"style={{marginLeft:"45px"}}>
           <img src={lunch} alt="Trusted Chefs" className="feature-img" />
           <p>Trusted by thousands of chefs and caterers.</p>
         </div>
 
-        <div className="feature-box">
+        <div className="feature-box"style={{marginLeft:"45px"}}>
           <img src={tatali} alt="Secure Payment" className="feature-img" />
           <p>Checkout instantly by card or apply for a credit account.</p>
         </div>
@@ -189,10 +189,9 @@ function Home() {
       <img src={moriga} alt="Spices" />
       <div className="portfolio-content">
         <span className="category">SPICES</span>
-        <h3>Turmeric Fingers & Powder</h3>
+        <h3>Moringa Powder</h3>
         <p>
-          Premium Salem & Nizam turmeric – culinary,
-          pharma & cosmetic use.
+          It is rich in vitamins, minerals, and antioxidants and is commonly used in food
         </p>
         <button className="portfolio-btn"style={{marginTop:"19px"}}>Explore</button>
       </div>
@@ -202,11 +201,11 @@ function Home() {
     <div className="portfolio-card">
       <img src={term} alt="Fruits" />
       <div className="portfolio-content">
-        <span className="category">FRUITS</span>
-        <h3>Pomegranates • Mangoes • Grapes</h3>
+        <span className="category">SPICES</span>
+        <h3>Turmeric Fingers & Powder</h3>
         <p>
-          Bhagwa pomegranates, Alphonso mangoes &
-          export-grade grapes.
+         Premium Salem & Nizam turmeric – culinary,
+          pharma & cosmetic use.
         </p>
         <button className="portfolio-btn">Explore</button>
       </div>
@@ -216,11 +215,10 @@ function Home() {
     <div className="portfolio-card">
       <img src={gandha} alt="Vegetables" />
       <div className="portfolio-content">
-        <span className="category">VEGETABLES</span>
-        <h3>Onions • Chilies • Drumsticks</h3>
+        <span className="category">SPICES</span>
+        <h3>Ashwagandha Powder</h3>
         <p>
-          Farm-fresh, graded & packed for 7–8 day shelf life.
-          Ideal for exports.
+          Ayurvedic medicine for improving strength, reducing stress, and supporting overall health.
         </p>
         <button className="portfolio-btn ">Explore</button>
       </div>
@@ -232,6 +230,19 @@ function Home() {
 
 <section className="promo-section">
   <div className="promo-container">
+
+    {/* RIGHT CARD */}
+    <div
+      className="promo-card"
+      style={{ backgroundImage: `url(${left})` }}
+    >
+      <div className="promo-overlay"></div>
+      <div className="promo-content">
+        <p className="promo-sub">Nature’s Freshest Harvest</p>
+        <h2>Carefully processed natural powders for a healthier lifestyle</h2>
+      
+      </div>
+    </div>
 
     {/* LEFT CARD */}
     <div
@@ -246,18 +257,6 @@ function Home() {
       </div>
     </div>
 
-    {/* RIGHT CARD */}
-    <div
-      className="promo-card"
-      style={{ backgroundImage: `url(${left})` }}
-    >
-      <div className="promo-overlay"></div>
-      <div className="promo-content">
-        <p className="promo-sub">Nature’s Freshest Harvest</p>
-        <h2>Carefully processed natural powders for a healthier lifestyle</h2>
-      
-      </div>
-    </div>
 
   </div>
 </section>
@@ -286,7 +285,12 @@ function Home() {
        Coriander Powder – A spice powder that improves digestion and adds aroma to food.Mint Powder – A refreshing herbal powder that aids digestion and freshens breath.
        Bittergourd Powder – A healthy powder that helps regulate blood sugar levels.Lemon Grass Powder – An aromatic powder known for detox and calming benefits.
       </p>
-      <button className="recipes-btn">Visit Seed-Bank</button>
+      <button 
+      className="recipes-btn"
+      onClick={() => navigate("/products")}
+    >
+      Visit Products
+    </button>
     </div>
 
     {/* RIGHT CAROUSEL */}
