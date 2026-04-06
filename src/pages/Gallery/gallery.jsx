@@ -12,7 +12,7 @@ import blog4 from "../../assets/gallery/blog4.png";
 import herog from "../../assets/gallery/imagesss.png"
 import chica from "../../assets/gallery/chica.png";
 import dish7 from "../../assets/gallery/dish7.png";
-import basil from "../../assets/gallery/basil.png";
+import basil from "../../assets/gallery/Basil.png";
 import mori from "../../assets/gallery/mori.png";
 import beetroot from "../../assets/gallery/beetroot.png";
 import garlik from "../../assets/gallery/garlik.png";
