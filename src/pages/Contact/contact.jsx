@@ -165,16 +165,18 @@ function Contact() {
           <h2 className="map-title">Our Location</h2>
           <p className="map-address">{contactData?.description}</p>
 
-          <div className="map-embed">
-            <iframe
-              title="Location Map"
-              src={`https://www.google.com/maps?q=${
-                contactData?.mapQuery ||
-                "Gat No 74 Dhondiraj Colony Palus Karad Road Palus Sangli Maharashtra"
-              }&output=embed`}
-              loading="lazy"
-            ></iframe>
-          </div>
+       <div className="map-embed">
+  <iframe
+    title="Location Map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.4733130477784!2d74.13523137492149!3d18.68761616405089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2d95186f4e421%3A0x3387652af66989ad!2sCHAUDHARY%20%26%20CO.%20(TAX%20CONSULTANT)!5e0!3m2!1sen!2sin!4v1775292169588!5m2!1sen!2sin"
+    width="100%"
+    height="450"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
         </div>
       </section>
 

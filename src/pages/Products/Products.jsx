@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import bg1 from "../../assets/gallery/image.png";
+import bg1 from "../../assets/gallery/imagesss.png";
 import "./Products.css";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL;

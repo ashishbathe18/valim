@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./home.css";
 
 /* ===== HERO IMAGES ===== */
@@ -38,6 +38,8 @@ import dish9 from "../../assets/Homes/dish9.png";
 const heroImages = [ash1, ash2, ash3, back];
 
 function Home() {
+ const navigate = useNavigate();
+
   useEffect(() => {
     document.title = "CHAUDHARY AND CO. | VEGETABLE PRODUCT Exporter";
   }, []);
@@ -153,7 +155,9 @@ function Home() {
         <h3>Every shipment carries our promise of excellence</h3>
       </div>
 
-      <button className="export-btn">Discover more</button>
+    <Link to="/gallery">
+  <button className="export-btn">Discover more</button>
+</Link>
     </div>
 
   </div>
@@ -174,13 +178,17 @@ function Home() {
     <div className="portfolio-card">
       <img src={ashw} alt="Towels" />
       <div className="portfolio-content">
-        <span className="category">TOWELS</span>
-        <h3>Terry Towels</h3>
+        <span className="category">Powder</span>
+        <h3>Beet Root</h3>
         <p>
-          Soft, absorbent, export-grade towels for healthcare,
-          hospitality & retail.
+        Beetroot contains natural nitrates that relax blood vessels.
+ Helps lower blood pressure and improves overall heart health.
         </p>
-        <button className="portfolio-btn"style={{marginBottom:"7px"}}>Explore</button>
+     <Link to="/blog">
+  <button className="portfolio-btn" style={{ marginBottom: "7px" }}>
+    Explore
+  </button>
+</Link>
       </div>
     </div>
 
@@ -188,12 +196,17 @@ function Home() {
     <div className="portfolio-card">
       <img src={moriga} alt="Spices" />
       <div className="portfolio-content">
-        <span className="category">SPICES</span>
+        <span className="category">Powder</span>
         <h3>Moringa Powder</h3>
         <p>
           It is rich in vitamins, minerals, and antioxidants and is commonly used in food
+          It has strong antioxidants that protect the body from infections.
         </p>
-        <button className="portfolio-btn"style={{marginTop:"19px"}}>Explore</button>
+      <Link to="/blog">
+  <button className="portfolio-btn" style={{ marginBottom: "7px" }}>
+    Explore
+  </button>
+</Link>
       </div>
     </div>
 
@@ -201,13 +214,16 @@ function Home() {
     <div className="portfolio-card">
       <img src={term} alt="Fruits" />
       <div className="portfolio-content">
-        <span className="category">SPICES</span>
+        <span className="category">Powder</span>
         <h3>Turmeric Fingers & Powder</h3>
         <p>
-         Premium Salem & Nizam turmeric – culinary,
-          pharma & cosmetic use.
+        Turmeric contains curcumin, a powerful antioxidant Helps  immune system.
         </p>
-        <button className="portfolio-btn">Explore</button>
+      <Link to="/blog">
+  <button className="portfolio-btn" style={{ marginBottom: "7px" }}>
+    Explore
+  </button>
+</Link>
       </div>
     </div>
 
@@ -215,12 +231,16 @@ function Home() {
     <div className="portfolio-card">
       <img src={gandha} alt="Vegetables" />
       <div className="portfolio-content">
-        <span className="category">SPICES</span>
+        <span className="category">Powder</span>
         <h3>Ashwagandha Powder</h3>
         <p>
           Ayurvedic medicine for improving strength, reducing stress, and supporting overall health.
         </p>
-        <button className="portfolio-btn ">Explore</button>
+  <Link to="/blog">
+  <button className="portfolio-btn" style={{ marginBottom: "7px" }}>
+    Explore
+  </button>
+</Link>
       </div>
     </div>
 
@@ -278,7 +298,7 @@ function Home() {
 
     {/* CENTER CONTENT */}
     <div className="recipes-content">
-      <h2>Vegetables And Powders</h2>
+      <h2>Powders And  Vegetables </h2>
       <p>
        Moringa is a highly nutritious plant known as a superfood.Ashwagandha is a powerful Ayurvedic herb.Turmeric is a bright yellow spice widely used in cooking.Amla is also known as Indian gooseberry.Onion is a common vegetable used in many dishes.
        Beet Root Powder – A natural powder that supports blood circulation and increases stamina.Turmeric Powder – A powerful anti-inflammatory spice rich in curcumin for immunity support.

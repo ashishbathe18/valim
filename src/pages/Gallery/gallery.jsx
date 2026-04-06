@@ -9,7 +9,16 @@ import blog2 from "../../assets/gallery/blog2.png";
 import image4 from "../../assets/gallery/image4.png";
 import blog3 from "../../assets/gallery/blog3.png";
 import blog4 from "../../assets/gallery/blog4.png";
-import herog from "../../assets/gallery/image.png"
+import herog from "../../assets/gallery/imagesss.png"
+import chica from "../../assets/gallery/chica.png";
+import dish7 from "../../assets/gallery/dish7.png";
+import basil from "../../assets/gallery/basil.png";
+import mori from "../../assets/gallery/mori.png";
+import beetroot from "../../assets/gallery/beetroot.png";
+import garlik from "../../assets/gallery/garlik.png";
+import wheat from "../../assets/gallery/wheat.png";
+import leman from "../../assets/gallery/leman.png";
+import mint from "../../assets/gallery/mint.png";
 
 const images = [
   { id: 1, src: blog, category: "turmeric" },
@@ -18,6 +27,16 @@ const images = [
   { id: 4, src: image4, category: "tea" },
   { id: 5, src: blog3, category: "jaggery" },
   { id: 6, src: blog4, category: "halad" },
+  {id: 7, src:chica , category:"chica"},
+ {id:8, src:dish7, category:"karla"},
+ {id:9, src:basil, category:"badishap"},
+ {id:10, src:mori, category:"moriga"},
+ {id:11, src:beetroot, category:"beetroot"},
+ {id:12, src:garlik, category:"garlik"},
+ {id:13, src:wheat, category:"wheatgrass"},
+ {id:14, src:leman, category:"lemangrass"},
+ {id:15, src:mint, category:"mint"},
+
 ];
 
 export default function Gallery() {
